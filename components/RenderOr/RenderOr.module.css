@@ -1,0 +1,30 @@
+.or {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.or span {
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.or::after {
+  content: "";
+  display: block;
+  height: 1px;
+  flex: 1;
+  width: calc(50% - 5px - 25px);
+  background-color: var(--item-border);
+}
+
+.or::before {
+  display: block;
+  content: "";
+  height: 1px;
+  flex: 1;
+  width: calc(50% - 5px - 25px);
+  background-color: var(--item-border);
+}

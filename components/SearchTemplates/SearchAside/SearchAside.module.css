@@ -1,0 +1,35 @@
+.aside {
+  margin-bottom: 40px;
+}
+
+.aside form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.aside form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.aside form > div .price {
+  display: flex;
+  gap: 20px;
+}
+.aside form > div .price > div {
+  flex: 1;
+}
+
+.aside form > div > p {
+  display: flex;
+  justify-content: space-between;
+}
+.aside form > div > p button {
+  width: fit-content;
+  background-color: transparent;
+  color: var(--main-color);
+  outline: none;
+  border: none;
+  font-size: 0.95rem;
+}

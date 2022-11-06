@@ -1,0 +1,9 @@
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  width: fit-content;
+  padding-inline: 3em;
+}

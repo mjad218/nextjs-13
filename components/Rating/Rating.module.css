@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.rating svg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ec7345;
+}
+.rating svg {
+  width: 22px;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}

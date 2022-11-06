@@ -1,0 +1,128 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid var(--item-border);
+  border-radius: 20px 20px 10px 10px;
+  overflow: hidden;
+  max-width: 350px;
+  position: relative;
+}
+.item img {
+  display: block;
+  object-fit: cover;
+  max-height: 150px;
+}
+
+.item .details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 10px;
+  position: relative;
+  padding: 0 20px 30px 20px;
+}
+.item .details p {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+.item .details p > span {
+  display: flex;
+  flex-basis: calc(50% - 10px);
+  gap: 15px;
+  align-items: center;
+}
+.item .details .price {
+  font-size: 20px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.item .details .price::after {
+  content: "$";
+}
+.item .details h3 {
+  font-size: 1.4rem;
+  margin: 0.1em 0;
+}
+.item .details .meta .downloads {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.item .details .meta h4 {
+  font-weight: 500;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.item .details .meta h4 strong {
+  font-size: 0.8rem;
+}
+.item .details > a {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: fit-content;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  background-color: var(--main-color);
+  padding: 0.2em 1.3em;
+  border-radius: 47px;
+  color: #fff;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 0.95rem;
+}
+.item .details .meta {
+  justify-content: flex-start;
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+.item .details .meta img {
+  border-radius: 50%;
+}
+.item .details .meta > div > div {
+  display: flex;
+  gap: 15px;
+}
+.item .details .meta time,
+.item .details .meta span {
+  font-size: 0.8rem;
+}
+.item .details .tag {
+  position: absolute;
+  top: -30px;
+  transform: translateY(-50%);
+  background-color: var(--main-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  border-radius: 35px;
+  line-height: initial;
+}
+
+.bookmark {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  inset-inline-end: 20px;
+  background-color: var(--bg-color);
+  z-index: 999;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  display: none;
+  justify-content: center;
+}
